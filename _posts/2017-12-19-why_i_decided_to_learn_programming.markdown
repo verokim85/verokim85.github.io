@@ -1,10 +1,13 @@
 ---
 layout: post
-title:      "why I decided to learn programming"
-date:       2017-12-20 00:16:00 +0000
+title:      "Why Programming?"
+date:       2017-12-19 19:16:01 -0500
 permalink:  why_i_decided_to_learn_programming
 ---
 
 
 
-I wanted to challenge myself and do something different with my life.  Currently I work as an Occupational therapist.  It's a great job however, after 7 years of devoting myself to this field I decided that this just wasn't for me anymore.  I wanted a brand new start with a new slate and really delve into something that I haven't done before.  One day I decided to open up an HTML book that was lying around in the house (thanks to hubby) and started teaching myself coding.  At first I thought, "this is like reading a bunch of hieroglyphics, I don't get it"  However the more I read, the more I understood that there was meaning to what I was reading (duh).  After I got a sense of how things worked, I decided to write my codes and make a mini website for myself.  It took a while but once I got it to work it was the most exciting thing ever!!  It was at that moment I decided to become a programmer!  I mean why not, coding is THE future.  With everything getting automated and the use of electonic devices becoming more prevalent, it's like joining the winning team.  I'm excited to be learning how to code and can't wait to work in this field.   
+     I've worked as an Occupational therapist for the past 7 years.  Although it is a very rewarding field, at this stage in my life I want something new.  How I came across programming is that one day I decided to picked up an HTML book that was lying around in my house and began to read it.  Although I wasn't able to decipher the codes at first, I kept at it.  Slowly but surely I was able to read and understand the text before me.  It was exciting, new and fun.  After a few months of tinkering around with HTML and CSS, I decided to turn my hobby into my future by enrolling into Flatiron school.       
+		 What excites me is technology.  It is advancing at a fast pace and I am amazed at the power it has to change a culture.  For instance, we can use technology to program artifical intelligence to improve the efficiency and safety in the workplace.  It can be used to connect doctors and patients for improved medical care.  In addition, we can also use it as a platform for people to connect via apps such as twitter, facebook, snapchat etc.  Technology is the future and it's only going to continue grow and expand.  I am passionate about this field and can't wait to be a part it.   
+    		
+
