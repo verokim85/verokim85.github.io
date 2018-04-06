@@ -32,6 +32,8 @@ shop["drink"] = "sprite"
 puts shop["drink"]                                                                                       
     => "sprite"
 
+
+
 literal constructor- literally (inline) with brace
 
 shop = {
@@ -79,7 +81,8 @@ shop["drink"] = "sprite"
 
 puts shop["meat"]      
 
-     #returns "nope"
+ => returns "nope"
+  
 
 
 Symbols 
@@ -91,21 +94,38 @@ Stings are mutable.  Every time a new string is created a new object id is made,
 
 Symbols are immutable.  You will always get the same object id no matter how many times you use that particular symbol. 
 
+String 
 
-name = "Steven"                                                                                                 name = :steven
-same_as_name = "Steven"                                                                             same_as_name = :steven
+name = "Steven"                                                                                                 
+same_as_name = "Steven"                                                                             
 
-name.object_id == same_as_name.object_id                                         name.object_id == same_as_name.object_id
-  #=> false                                                                                                              #=> true
+name.object_id == same_as_name.object_id                                        
+  #=> false                                                                                                            
 
 
-puts "Steven".object_id                                                                                    puts :steven.object_id
-puts "Steven".object_id                                                                                    puts :steven.object_id
-puts "Steven".object_id                                                                                    puts :steven.object_id
+puts "Steven".object_id                                                                                    
+puts "Steven".object_id                                                                                    
+puts "Steven".object_id                                                                                    
  
-=> 70236825545220                                                                                        # > 1093988
-= > 70236822108160                                                                                       # > 1093988
-= > 70236821810060                                                                                       # > 1093988
+=> 70236825545220                                                                                       
+= > 70236822108160                                                                                     
+= > 70236821810060                                                                                      
+
+Symbol
+
+name = :steven
+same_as_name = :steven
+
+name.object_id == same_as_name.object_id
+#=> true
+
+puts :steven.object_id
+puts :steven.object_id
+puts :steven.object_id
+ => 1093988
+ => 1093988
+ => 1093988
+
 
 
 Types of symbols:
