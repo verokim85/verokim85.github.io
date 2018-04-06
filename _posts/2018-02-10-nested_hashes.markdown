@@ -59,12 +59,12 @@ Hashes store data in keys and can be assessed by the key name:
 Adding a new key/value pair
 
 
-                    shop["dairy"] = "butter"
+      shop["dairy"] = "butter"
 
 
-                               puts shop
+        puts shop
 
-                                      => {"vegetable"=>"onion", "fruit"=>"apple", "drink"=>"sprite", "dairy"=>"butter"}
+            => {"vegetable"=>"onion", "fruit"=>"apple", "drink"=>"sprite", "dairy"=>"butter"}
 
 
 
