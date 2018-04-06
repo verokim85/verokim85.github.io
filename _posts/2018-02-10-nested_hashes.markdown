@@ -1,12 +1,121 @@
 ---
 layout: post
-title:      "Nested Hashes"
-date:       2018-02-10 14:56:39 +0000
+title:      "Let's hash it out"
+date:       2018-02-10 09:56:40 -0500
 permalink:  nested_hashes
 ---
 
 
-I struggled through nested hashes.  The concepts were pretty easy when reading the sections however, completing the labs were another story.  I had to tap into various resources available on learn.co and google in order to become adept in hashes and solve the lab problems.  I had to review the concepts over the course of several days in order to make sure that I truly understood the concepts of hashes since they play a large role in programming.  One of the major struggles I had with hashes was being able to look at the various layers within the hashes in order to access and manipulate the correct one.  I allowed myself time to read and absorb the information while also playing around in the irb.  After processing through the information I was not only able to solve the labs, I understood hashes! 
+
+Hash Facts:
+ 
+   * Hashes are key/value pairs that can be made up of strings, symbols or integers.
+
+   * Every key in a hash needs to be unique or else the duplicate key can override and replace the existing key. 
+
+   * Hashes have no beginning or end.  Unlike an array the key/value pairs can't be appended '<<' to a hash, they need to   
+     be inserted
+	 
+ 
+ 
+                                                                  How to create a hash 
+																																	
+
+**class constructor                                                                                 literal constructor** - literally (inline) with braces
+
+shop = Hash.new                                                                                        shop = {
+
+shop["vegetable"] = "onion"                                                                                  "vegetable": "onion",
+shop["fruit"] = "apple"                                                                                              "fruit": "apple",
+shop["drink"] = "sprite"                                                                                            "drink": "sprite"
+                                                                                                                                          }
+puts shop["drink"]                                                                                        puts shop[:"drink"]
+
+                                                                    
+																																		#returns  "sprite" 
+
+ 
+ 
+
+Hashes store data in keys and can be assessed by the key name:
+
+
+shop = {"vegetable" => "onion", "fruit" => "apple", "drink" => "sprite"} 
+
+shop["fruit"]
+
+        => "apple"
+
+
+Adding a new key/value pair
+
+
+                    shop["dairy"] = "butter"
+
+
+                               puts shop
+
+                                      => {"vegetable"=>"onion", "fruit"=>"apple", "drink"=>"sprite", "dairy"=>"butter"}
+
+
+
+
+Hashes have a default value of nil.  Therefore nil is returned when searching for a key that doesn't exist.  
+Change the default value by sending it as an argument 
+
+shop = Hash.new("nope")          Now default value is now "nope" instead of nil 
+
+
+shop["vegetable"] = "onion"
+shop["fruit"] = "apple"
+shop["drink"] = "sprite"
+
+puts shop["meat"]      
+
+     #returns "nope"
+
+
+Symbols 
+
+
+Why are they used? 
+      
+Stings are mutable.  Every time a new string is created a new object id is made, even if an identical string is created.  This is because strings are saved in 2 different locations in memory.
+
+Symbols are immutable.  You will always get the same object id no matter how many times you use that particular symbol. 
+
+
+name = "Steven"                                                                                                 name = :steven
+same_as_name = "Steven"                                                                             same_as_name = :steven
+
+name.object_id == same_as_name.object_id                                         name.object_id == same_as_name.object_id
+  #=> false                                                                                                              #=> true
+
+
+puts "Steven".object_id                                                                                    puts :steven.object_id
+puts "Steven".object_id                                                                                    puts :steven.object_id
+puts "Steven".object_id                                                                                    puts :steven.object_id
+ 
+=> 70236825545220                                                                                        # > 1093988
+= > 70236822108160                                                                                       # > 1093988
+= > 70236821810060                                                                                       # > 1093988
+
+
+Types of symbols:
+
+       numbers = {:first => "one"}     is equal to   number = {first: "one"}
+
+       The key first: is still interpreted as a symbol by the interpreter.
+
+       Either syntax can be used as long as you're consistent and stick to one. 
+
+
+
+
+
+
+
+
 
 
 
