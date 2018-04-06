@@ -18,25 +18,31 @@ Hash Facts:
 	 
  
  
-                                                                  How to create a hash 
+                                                      **     How to create a hash**
 																																	
+class constructor                                                                             
 
-**class constructor                                                                                 literal constructor** - literally (inline) with braces
+shop = Hash.new                                                                                        
 
-shop = Hash.new                                                                                        shop = {
+shop["vegetable"] = "onion"                                                                                 
+shop["fruit"] = "apple"                                                                                              
+shop["drink"] = "sprite"                                                                                            
+                                                                                                                                        
+puts shop["drink"]                                                                                       
+    => sprite
 
-shop["vegetable"] = "onion"                                                                                  "vegetable": "onion",
-shop["fruit"] = "apple"                                                                                              "fruit": "apple",
-shop["drink"] = "sprite"                                                                                            "drink": "sprite"
-                                                                                                                                          }
-puts shop["drink"]                                                                                        puts shop[:"drink"]
+literal constructor- literally (inline) with brace
 
-                                                                    
-																																		#returns  "sprite" 
-
- 
- 
-
+shop = {
+    "vegetable": "onion",
+		"fruit": "apple",																							
+    "drink": "sprite"
+      }
+puts shop[:"drink"]
+   => sprite
+	 
+	 
+	 
 Hashes store data in keys and can be assessed by the key name:
 
 
