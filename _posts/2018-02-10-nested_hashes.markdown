@@ -96,35 +96,35 @@ Symbols are immutable.  You will always get the same object id no matter how man
 
 String 
 
-name = "Steven"                                                                                                 
-same_as_name = "Steven"                                                                             
+    name = "Steven"                                                                                                 
+    same_as_name = "Steven"                                                                             
 
-name.object_id == same_as_name.object_id                                        
-  #=> false                                                                                                            
+    name.object_id == same_as_name.object_id                                        
+     => false                                                                                                            
 
 
-puts "Steven".object_id                                                                                    
-puts "Steven".object_id                                                                                    
-puts "Steven".object_id                                                                                    
+    puts "Steven".object_id                                                                                    
+    puts "Steven".object_id                                                                                    
+    puts "Steven".object_id                                                                                    
  
-=> 70236825545220                                                                                       
-= > 70236822108160                                                                                     
-= > 70236821810060                                                                                      
+    => 70236825545220                                                                                       
+    = > 70236822108160                                                                                     
+    = > 70236821810060                                                                                      
 
 Symbol
 
-name = :steven
-same_as_name = :steven
+    name = :steven
+    same_as_name = :steven
 
-name.object_id == same_as_name.object_id
-#=> true
+    name.object_id == same_as_name.object_id
+     => true
 
-puts :steven.object_id
-puts :steven.object_id
-puts :steven.object_id
- => 1093988
- => 1093988
- => 1093988
+    puts :steven.object_id
+    puts :steven.object_id
+    puts :steven.object_id
+    => 1093988
+    => 1093988
+    => 1093988
 
 
 
