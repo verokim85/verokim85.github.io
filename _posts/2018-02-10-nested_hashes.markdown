@@ -23,37 +23,37 @@ How to create a hash
 																																	
 class constructor                                                                             
 
-shop = Hash.new                                                                                        
+    shop = Hash.new                                                                                        
 
-shop["vegetable"] = "onion"                                                                                 
-shop["fruit"] = "apple"                                                                                              
-shop["drink"] = "sprite"                                                                                            
+     shop["vegetable"] = "onion"                                                                                 
+     shop["fruit"] = "apple"                                                                                              
+     shop["drink"] = "sprite"                                                                                            
                                                                                                                                         
-puts shop["drink"]                                                                                       
-    => "sprite"
+      puts shop["drink"]                                                                                       
+         => "sprite"
 
 
 
 literal constructor- literally (inline) with brace
 
-shop = {
-    "vegetable": "onion",
-		"fruit": "apple",																							
-    "drink": "sprite"
-      }
-puts shop[:"drink"]
-   => "sprite"
+    shop = {
+      "vegetable": "onion",
+	  	"fruit": "apple",																							
+      "drink": "sprite"
+         }
+    puts shop[:"drink"]
+      => "sprite"
 	 
 	 
 	 
 Hashes store data in keys and can be assessed by the key name:
 
 
-shop = {"vegetable" => "onion", "fruit" => "apple", "drink" => "sprite"} 
+    shop = {"vegetable" => "onion", "fruit" => "apple", "drink" => "sprite"} 
 
-shop["fruit"]
+    shop["fruit"]
 
-        =>"apple
+         =>"apple
 
 
 Adding a new key/value pair
@@ -72,16 +72,16 @@ Adding a new key/value pair
 Hashes have a default value of nil.  Therefore nil is returned when searching for a key that doesn't exist.  
 Change the default value by sending it as an argument 
 
-shop = Hash.new("nope")          Now default value is now "nope" instead of nil 
+    shop = Hash.new("nope")          Now default value is now "nope" instead of nil 
 
 
-shop["vegetable"] = "onion"
-shop["fruit"] = "apple"
-shop["drink"] = "sprite"
+    shop["vegetable"] = "onion"
+    shop["fruit"] = "apple"
+    shop["drink"] = "sprite"
+ 
+    puts shop["meat"]      
 
-puts shop["meat"]      
-
- => returns "nope"
+        => returns "nope"
   
 
 
