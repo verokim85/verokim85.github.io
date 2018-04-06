@@ -18,7 +18,8 @@ Hash Facts:
 	 
  
  
-                                                      **     How to create a hash**
+How to create a hash
+                                                
 																																	
 class constructor                                                                             
 
@@ -29,7 +30,7 @@ shop["fruit"] = "apple"
 shop["drink"] = "sprite"                                                                                            
                                                                                                                                         
 puts shop["drink"]                                                                                       
-    => sprite
+    => "sprite"
 
 literal constructor- literally (inline) with brace
 
@@ -39,7 +40,7 @@ shop = {
     "drink": "sprite"
       }
 puts shop[:"drink"]
-   => sprite
+   => "sprite"
 	 
 	 
 	 
@@ -50,7 +51,7 @@ shop = {"vegetable" => "onion", "fruit" => "apple", "drink" => "sprite"}
 
 shop["fruit"]
 
-        => "apple"
+        =>"apple
 
 
 Adding a new key/value pair
