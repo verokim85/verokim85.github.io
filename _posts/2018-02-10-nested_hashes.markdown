@@ -46,7 +46,7 @@ literal constructor- literally (inline) with brace
 	 
 	 
 	 
-Hashes store data in keys and can be assessed by the key name:
+Hashes store data in keys and values can be assessed by the key name:
 
 
     shop = {"vegetable" => "onion", "fruit" => "apple", "drink" => "sprite"} 
@@ -69,8 +69,8 @@ Adding a new key/value pair
 
 
 
-Hashes have a default value of nil.  Therefore nil is returned when searching for a key that doesn't exist.  
-Change the default value by sending it as an argument 
+Hashes have a default value of nil.  Therefore nil is returned when searching for a key that doesn't exist within the hash.  
+Change the default value by setting it as an argument 
 
     shop = Hash.new("nope")          Now default value is now "nope" instead of nil 
 
@@ -81,7 +81,7 @@ Change the default value by sending it as an argument
  
     puts shop["meat"]      
 
-        => returns "nope"
+        => "nope"
   
 
 
@@ -90,7 +90,7 @@ Symbols
 
 Why are they used? 
       
-Stings are mutable.  Every time a new string is created a new object id is made, even if an identical string is created.  This is because strings are saved in 2 different locations in memory.
+Stings are mutable.  A new string creates a new object id.  If an identical string is created, the string now has a new object id.  This is because each new string is saved in a new memory location in the computer and are allocated different object id's each time a new string is created.
 
 Symbols are immutable.  You will always get the same object id no matter how many times you use that particular symbol. 
 
@@ -128,9 +128,9 @@ Symbol
 
 
 
-Types of symbols:
+Different types of symbols:
 
-       numbers = {:first => "one"}     is equal to   number = {first: "one"}
+       numbers = {:first => "one"}     is equal to   numbers = {first: "one"}
 
        The key first: is still interpreted as a symbol by the interpreter.
 
